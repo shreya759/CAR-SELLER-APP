@@ -1,0 +1,242 @@
+/* Style the search input */
+input[type="text"] {
+  width: 35%;
+  margin-left: 310px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+/* Style the car list container */
+.car-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 6px;
+  margin: 0 auto; /* Center horizontally */
+  max-width: 800px; /* Adjust the maximum width as needed */
+  max-height: 800px; /* Adjust the maximum height as needed */
+}
+/* Style individual car cards */
+.car-card {
+  border: 1px solid #ddd;
+  overflow: hidden;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjusted alignment */
+  width: 200px; /* Reduced width */
+  height: 230px; /* Reduced height */
+  background: #e3e9f1;
+  border-radius: 10px; /* Adjusted border radius */
+}
+
+.car-card img {
+  object-fit: cover;
+  width: 100%; /* Image width to fit the card */
+  height: 120px; /* Reduced image height */
+  border-radius: 5px; 
+  /* Rounded top corners */
+}
+
+.car-card h2 {
+  font-family: Epilogue;
+  font-size: 18px; /* Reduced font size */
+  font-weight: 700;
+  color: rgb(57, 42, 42);
+  margin: 10px 0; /* Adjusted margin */
+}
+
+.car-card p {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(7, 10, 12);
+  margin: 0; /* Removed padding */
+}
+
+.car-card button {
+  background-color: rgb(63, 65, 184);
+  color: #FFFFFFFF;
+  border: none;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px; /* Reduced button height */
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Style the pagination container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 10px
+}
+
+/* Style the pagination buttons */
+.pagination button {
+  background-color:white;
+  color:black;
+  border: 1px;
+  border-color: black;
+  padding: 5px 10px; /* Adjusted padding */
+  margin: 0 2px;
+  display:flex;
+  align-items: flex-end;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color:rgb(225, 219, 219);
+}
+
+/* Style the active page button */
+.pagination button.active {
+  background-color:rgb(225, 219, 219);
+}
+
+
+.RentHeart{
+  display:flex;
+  Justify-content:space-between;
+  Align-items:center;
+}
+.Heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s; /* Add transition for smooth color change */
+}
+
+.Heart:hover {
+  color: red; /* Change the color to red on hover */
+}
+
+
+.RentButton{
+  display:flex;
+  Justify-content:space-between;
+  Align-items:center;
+}
+.sub3{
+  display:flex;
+  Justify-content:space-between;
+  align-items: center;
+  border-top:0.5px solid grey;
+  padding-top:2px;
+}
+.bottom{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.Header{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.Year{
+  border:1px dashed blue;
+  text-align: center;
+  border-radius: 10px;
+  width:45px;
+}
+.main{
+  background-color:aliceblue;
+ }
+.sub1{
+  display:flex;
+  Justify-content:space-between;
+  align-items: center;
+  padding-top:3px;
+}
+.capacity{
+  display:flex;
+  gap:10px;
+  align-items:center; 
+  padding: 3px;
+}
+.gas{
+  display:flex;
+  gap:7px;
+  align-items:center;
+}
+.sub2{
+  display:flex;
+  Justify-content:space-between;
+  align-items: center;
+  padding-top:3px;
+}
+.mileage{
+  display:flex;
+  gap:7px;
+  align-items:center;
+}
+.type{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+/* Style for the search container */
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the search input */
+.search-bar {
+  padding: 10px 30px 10px 10px; /* Adjust the padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Adjust for your desired border radius */
+  font-size: 16px;
+  margin-bottom:10px;
+  width: 100px; /* Adjust the width as needed */
+  outline: none; /* Remove the input focus outline */
+}
+
+/* Style for the search icon */
+.search-icon {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #555; /* Adjust the color as needed */
+  cursor: pointer;
+}
+
+/* Style for the search icon on hover */
+.search-icon:hover {
+  color: #333; /* Adjust the hover color as needed */
+}
+
+.fa-gas-pump{
+  color:#007bff;
+}
+.fa-user-group{
+  color:#007bff;
+}
+.fa-bolt{
+  color:#007bff;
+}
+.fa-car{
+  color:#007bff;
+}
+.fa-heart{
+  color:#007bff;
+}
+.RentNow{
+  background-color: #0095A9FF;
+  color: #FFFFFFFF;
+  border: #fff;
+  border-radius: 4px;
+  width:90px;
+  height:44px;
+  position:relative;
+  text-align:center;
+
+}

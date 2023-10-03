@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Search</title> 
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      const prevButton = document.getElementById('prevButton');
+      const nextButton = document.getElementById('nextButton');
+      const number=document.getElementById('number')
+      const gridContainer = document.querySelector('.grid-container');
+      let currentPage = 1;
+      const totalPages = 10;
+
+          for (let i = (currentPage - 1) * 6 + 1; i <= currentPage * 6 && i <= totalPages; i++) {
+              const gridItem = document.createElement('div');
+              gridItem.classList.add('grid-item');
+              gridItem.textContent = `Grid ${i}`;
+              gridContainer.appendChild(gridItem);
+          }
+
+          // Enable/disable pagination buttons
+          prevButton.disabled = currentPage === 1;
+          nextButton.disabled = currentPage === totalPages;
+
+
+      // Event listener for previous button
+      prevButton.addEventListener('click', () => {
+          if (currentPage > 1) {
+              currentPage--;
+              updateGrid();
+          }
+      });
+
+      // Event listener for next button
+      nextButton.addEventListener('click', () => {
+          if (currentPage < totalPages) {
+              currentPage++;
+              updateGrid();
+          }
+      });
+
+      // Initial grid setup
+      updateGrid();
+    </script>
+  </body>
+    
+</html>
